@@ -93,6 +93,7 @@ input {
 .description-cont {
     width: 286.6px;
     height: 138px;
+    transition: all 0.1s ease;
 }
 .description-cont > span {
     color: blanchedalmond;
@@ -127,19 +128,19 @@ input {
     margin-top: -0%;
 }
 #switch2:checked ~ .description-overflow > .description-cont {
-    margin-top: -100%;
+    margin-top: -23px;
 }
 #switch3:checked ~ .description-overflow > .description-cont {
-    margin-top: -200%;
+    margin-top: -46px;
 }
 #switch4:checked ~ .description-overflow > .description-cont {
-    margin-top: -300%;
+    margin-top: -69px;
 }
 #switch5:checked ~ .description-overflow > .description-cont {
-    margin-top: -400%;
+    margin-top: -92px;
 }
 #switch6:checked ~ .description-overflow > .description-cont {
-    margin-top: -500%;
+    margin-top: -115px;
 }
 
 
