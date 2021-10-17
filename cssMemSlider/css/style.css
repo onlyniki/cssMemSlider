@@ -1,0 +1,165 @@
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    background-color: #464646;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 70vw;
+}
+.all {
+    padding: 30px 0;
+}
+
+.inputs {
+    text-align: center;
+}
+
+.images > div {
+    width: 16.6666667%;
+    height: 100%;
+    
+    float: left;
+}
+.images {
+    width: 600%;
+    line-height: 0;
+    height: 90%;
+    transition: all 0.8s ease;
+    /* margin: 0 auto; */
+}
+.overflow {
+    width: 100%;
+    overflow: hidden;
+    height: 87vmin;
+}
+@media screen and (max-width: 1000px) {
+    .overflow {
+        height: 60vmin;
+    }
+}
+@media screen and (max-width: 600px) {
+    .overflow {
+        height: 40vmin;
+    }
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    border-radius: 2%;
+}
+.controls-container {
+    display: flex;
+    gap: 0 5px;
+}
+label, span {
+    cursor: pointer;
+}
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+label:hover > span {
+    border: 2px solid #fff;
+    background-color: #fff;
+}
+label > span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #3578dd;
+    background-color: #3578dd;
+    transition: all 0.3s ease;
+}
+input {
+    display: none;
+}
+.description-overflow {
+    width: 286.6px;
+    overflow: hidden;
+    height: 23px;
+}
+.description-cont {
+    width: 286.6px;
+    height: 138px;
+}
+.description-cont > span {
+    color: blanchedalmond;
+    font-size: 20px;
+    display: block;
+    float: left;
+    width: 100%;
+    height: 23px;
+}
+
+#switch1:checked ~ .images {
+    margin-left: -0%;
+}
+#switch2:checked ~ .images {
+    margin-left: -100%;
+}
+#switch3:checked ~ .images {
+    margin-left: -200%;
+}
+#switch4:checked ~ .images {
+    margin-left: -300%;
+}
+#switch5:checked ~ .images {
+    margin-left: -400%;
+}
+#switch6:checked ~ .images {
+    margin-left: -500%;
+}
+
+
+#switch1:checked ~ .description-overflow > .description-cont {
+    margin-top: -0%;
+}
+#switch2:checked ~ .description-overflow > .description-cont {
+    margin-top: -100%;
+}
+#switch3:checked ~ .description-overflow > .description-cont {
+    margin-top: -200%;
+}
+#switch4:checked ~ .description-overflow > .description-cont {
+    margin-top: -300%;
+}
+#switch5:checked ~ .description-overflow > .description-cont {
+    margin-top: -400%;
+}
+#switch6:checked ~ .description-overflow > .description-cont {
+    margin-top: -500%;
+}
+
+
+#switch1:checked ~ .controls-container > .label1 > span {
+    background-color: unset;
+}
+#switch2:checked ~ .controls-container > .label2 > span {
+    background-color: unset;
+}
+#switch3:checked ~ .controls-container > .label3 > span {
+    background-color: unset;
+}
+#switch4:checked ~ .controls-container > .label4 > span {
+    background-color: unset;
+}
+#switch5:checked ~ .controls-container > .label5 > span {
+    background-color: unset;
+}
+#switch6:checked ~ .controls-container > .label6 > span {
+    background-color: unset;
+}
+
+
