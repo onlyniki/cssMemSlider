@@ -13,7 +13,7 @@ body {
     width: 70vw;
 }
 .all {
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 .inputs {
@@ -36,7 +36,7 @@ body {
 .overflow {
     width: 100%;
     overflow: hidden;
-    height: 87vmin;
+    height: 95vmin;
 }
 @media screen and (max-width: 1000px) {
     .overflow {
@@ -103,6 +103,12 @@ input {
     width: 100%;
     height: 23px;
 }
+.description-slider {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
 
 #switch1:checked ~ .images {
     margin-left: -0%;
@@ -124,42 +130,42 @@ input {
 }
 
 
-#switch1:checked ~ .description-overflow > .description-cont {
-    margin-top: -0%;
+#switch1:checked ~ .description-slider .description-cont {
+    margin-top: 0;
 }
-#switch2:checked ~ .description-overflow > .description-cont {
+#switch2:checked ~ .description-slider .description-cont {
     margin-top: -23px;
 }
-#switch3:checked ~ .description-overflow > .description-cont {
+#switch3:checked ~ .description-slider .description-cont {
     margin-top: -46px;
 }
-#switch4:checked ~ .description-overflow > .description-cont {
+#switch4:checked ~ .description-slider .description-cont {
     margin-top: -69px;
 }
-#switch5:checked ~ .description-overflow > .description-cont {
+#switch5:checked ~ .description-slider .description-cont {
     margin-top: -92px;
 }
-#switch6:checked ~ .description-overflow > .description-cont {
+#switch6:checked ~ .description-slider .description-cont {
     margin-top: -115px;
 }
 
 
-#switch1:checked ~ .controls-container > .label1 > span {
+#switch1:checked ~ .description-slider .label1 > span {
     background-color: unset;
 }
-#switch2:checked ~ .controls-container > .label2 > span {
+#switch2:checked ~ .description-slider .label2 > span {
     background-color: unset;
 }
-#switch3:checked ~ .controls-container > .label3 > span {
+#switch3:checked ~ .description-slider .label3 > span {
     background-color: unset;
 }
-#switch4:checked ~ .controls-container > .label4 > span {
+#switch4:checked ~ .description-slider .label4 > span {
     background-color: unset;
 }
-#switch5:checked ~ .controls-container > .label5 > span {
+#switch5:checked ~ .description-slider .label5 > span {
     background-color: unset;
 }
-#switch6:checked ~ .controls-container > .label6 > span {
+#switch6:checked ~ .description-slider .label6 > span {
     background-color: unset;
 }
 
